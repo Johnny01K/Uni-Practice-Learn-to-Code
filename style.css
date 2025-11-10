@@ -1,0 +1,210 @@
+/* === Opšti stilovi === */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #333 0%, #5e5e5e 100%);
+    color: white;
+    transition: background 0.4s, color 0.4s;
+}
+
+.gornje-zaglavlje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.gornje-levo a, .gornje-desno a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.gornje-levo a:hover, .gornje-desno a:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.gornje-desno {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 6px 10px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar .search-btn {
+    background-color: #059862;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.search-bar .search-btn img {
+    width: 18px;
+}
+
+.prazan-blok {
+    background-color: #FFF4A3;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.prazan-blok button {
+    background: none;
+    border: 1px solid #000;
+    color: black;
+    padding: 4px 6px;
+    margin-left: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prazan-blok button:hover {
+    background-color: #04AA6D;
+    color: white;
+    border-color: #04AA6D;
+}
+
+.donja-navigacija {
+    background-color: #333;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.donja-navigacija a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donja-navigacija a:hover {
+    color: #04AA6D;
+}
+
+/* === Glavna sekcija === */
+.donja-sekcija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+.levi-deo-sekcije h1 {
+    font-size: 70px;
+    font-weight: 750;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.levi-deo-sekcije p {
+    color: #FFF4A3;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.search-tutorial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search-tutorial input {
+    padding: 10px 15px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    outline: none;
+    width: 280px;
+}
+
+.search-tutorial .submit-btn {
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-tutorial .submit-btn img {
+    width: 18px;
+}
+
+.donji-tekst {
+    color: #04AA6D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.donji-tekst:hover {
+    text-decoration: underline;
+}
+
+.desni-deo-sekcije img {
+    width: 480px;
+    border: 2px solid #ccc;
+}
+
+body.light-mode {
+    background: linear-gradient(to bottom, #0b0b0b 0%, #303030 100%);
+    color: black;
+}
+
+body.light-mode .donja-navigacija {
+    background-color: #e0e0e0;
+}
+
+body.light-mode .donja-navigacija a {
+    color: black;
+}
+
+/* responzivnost za mobilne uredjaje*/
+@media (max-width: 768px) {
+    .gornje-zaglavlje {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gornje-levo, .gornje-desno {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .donja-sekcija {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .desni-deo-sekcije img {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
